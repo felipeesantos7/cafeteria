@@ -1,0 +1,429 @@
+:root {
+  --main-color: #d3ad7f;
+  --black: #13131a;
+  --bg: #010103;
+  --border: 0.1rem solid rgba(255, 255, 255, 0.3);
+  --color: #fff;
+  font-size: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: 0.2s linear;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg);
+}
+
+section {
+  padding: 3rem 2rem;
+  margin: 0 auto;
+  max-width: 1250px; /* Aumentamos ligeiramente o limite máximo da barra para acomodar tudo */
+}
+
+/* Header Principal */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  border-bottom: var(--border);
+  background-color: var(--bg);
+}
+
+.header section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem; /* Ajustado para dar respiro entre os blocos */
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+/* Caixa da Barra de Pesquisa */
+.search-box {
+  display: flex;
+  align-items: center;
+  background-color: var(--black);
+  border: var(--border);
+  border-radius: 30px;
+  padding: 0.6rem 1.2rem;
+}
+
+.search-input {
+  background: transparent;
+  color: var(--color);
+  font-size: 1.3rem;
+  width: 140px; /* Compactado ligeiramente para proteger o layout */
+  font-family: "Poppins", sans-serif;
+}
+
+.search-input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+  text-transform: none;
+}
+
+.search-icon {
+  font-size: 1.3rem;
+  cursor: pointer;
+  margin-left: 0.5rem;
+}
+
+/* Menu de Navegação */
+.navbar {
+  display: flex;
+  white-space: nowrap;
+}
+
+.navbar a {
+  margin: 0 0.7rem; /* Margem ajustada para não empurrar as palavras */
+  font-size: 1.6rem; /* Tamanho calibrado para telas padrão de laptop */
+  color: white;
+  transition: 0.2s;
+}
+
+.navbar a:hover {
+  color: var(--main-color);
+  border-bottom: 0.1rem solid var(--main-color);
+  padding-bottom: 0.5rem;
+}
+
+/* Bloco de Ícones (Coração e Carrinho) */
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.icons img {
+  cursor: pointer;
+  filter: invert(1); /* Faz os ícones pretos do Icons8 ficarem brancos */
+  transition: 0.2s;
+}
+
+.icons img:hover {
+  color: var(--main-color);
+  transform: scale(1.1); /* Efeito opcional de zoom ao passar o mouse */
+}
+
+/* Botão Cadastro */
+.cadastro {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--color);
+  background-color: chocolate;
+  border-radius: 100px;
+  padding: 8px 20px;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.3rem;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.cadastro:hover {
+  background-color: #bd5a19;
+}
+
+/* Ícone do Usuário dentro do Botão */
+.cadastro .usuario {
+  height: 1.6rem;
+  width: auto;
+  filter: invert(1);
+}
+.btn {
+  background: var(--main-color);
+  color: white;
+  padding: 1rem 5rem;
+  font-size: 1.7rem;
+  cursor: pointer;
+  margin-top: 1rem;
+  display: inline-block;
+  border-radius: 10px;
+  color: #fff;
+  background-color: #bd5a19;
+  transition: 0.2s;
+}
+.btn:hover {
+  cursor: pointer;
+  filter: sepia(1);
+}
+
+.home-container {
+  background: url("img/main2.jpg");
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+}
+.home-container section {
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+}
+.content {
+  max-width: 60rem;
+}
+.content h3 {
+  color: #fff;
+  font-size: 6rem;
+}
+.content p {
+  color: rgb(255, 255, 255);
+  font-size: 1.6rem;
+  font-weight: 200;
+  line-height: 1.8;
+  padding: 2rem 0;
+}
+.title {
+  font-size: 5rem;
+  color: var(--main-color);
+  text-align: center;
+  gap: 30px;
+  text-transform: uppercase;
+}
+.title samp {
+  color: #fff;
+  text-transform: uppercase;
+}
+.sobre .row {
+  display: flex;
+  align-items: center;
+  background-color: var(--black);
+  gap: 1.5rem;
+}
+.sobre .row .contennt {
+  padding: 2rem;
+}
+.sobre .row .contennt h3 {
+  font-size: 3rem;
+  color: #fff;
+}
+.sobre .row .contennt p {
+  font-size: 1.6rem;
+  color: #fff;
+  padding: 1rem 0;
+  line-height: 1.8;
+}
+/* Define que o container do vídeo vai ocupar metade do espaço da linha */
+.sobre .row .video-container {
+  flex: 1 1 45rem;
+  width: 100%;
+}
+
+/* Controla o tamanho do vídeo para ele não vazar da caixinha */
+.sobre .row .video-container video {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 0.5rem; /* Opcional: deixa as bordas do vídeo levemente arredondadas */
+}
+
+/* Garante que o texto ao lado também ocupe o espaço correto */
+.sobre .row .contennt {
+  flex: 1 1 45rem;
+  padding: 2rem;
+}
+.title2 {
+  font-size: 5rem;
+  color: var(--main-color);
+  text-align: center;
+  gap: 30px;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  left: 300px;
+}
+.title samp {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+/* Container das figurinhas */
+.comida {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+/* Figurinha */
+.comi {
+  width: 180px;
+  background-color: #2a2a2a;
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+}
+
+.comi img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.preco {
+  color: #fff;
+}
+.comprar {
+  color: #070707;
+  background-color: #bd5a19;
+  border-radius: 30px;
+  padding: 12px 20px;
+}
+
+.pagar {
+  color: #010103;
+  background-color: #bd5a19;
+  border-radius: 30px;
+  padding: 12px 20px;
+}
+.title2 {
+  font-size: 5rem;
+  color: var(--main-color);
+  display: flex;
+}
+.title3 {
+  font-size: 5rem;
+  color: var(--main-color);
+  display: flex;
+  display: flex;
+  justify-content: center;
+  top: 50px;
+}
+.avalia {
+  display: flex;
+  justify-content: self-end;
+  align-items: self-end;
+  gap: 50px;
+  flex-wrap: wrap;
+  padding: 100px;
+}
+
+/* Figurinha */
+.avalia1 {
+  width: 180px;
+  background-color: #6e6e6e;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+}
+
+.avalia1 img {
+  width: 100%;
+  border-radius: 10px;
+}
+.avalia h1 {
+  color: #000000;
+  font-size: 20px;
+  padding: 10px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.avalia p {
+  color: #ffffff;
+  font-size: 15px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.estrela-pronta {
+  color: #f39c12;
+  font-size: 30px;
+}
+.title8 {
+  font-size: 5rem;
+  color: var(--main-color);
+  display: flex;
+  display: flex;
+  justify-content: center;
+  top: 50px;
+}
+.avalia {
+  display: flex;
+  justify-content: self-end;
+  align-items: self-end;
+  gap: 50px;
+  flex-wrap: wrap;
+  padding: 100px;
+}
+.lojas {
+  padding: 50px 0;
+}
+
+.lojas-container {
+  max-width: 1100px;
+  margin: auto;
+  background: #2a2a2a;
+  border: 1px solid #555;
+  border-radius: 10px;
+
+  display: flex;
+  justify-content: space-around;
+
+  padding: 50px;
+}
+
+.loja {
+  color: #fff;
+  line-height: 1.8;
+}
+
+.loja h3 {
+  color: #bd5a19;
+  margin-bottom: 15px;
+  font-size: 2rem;
+}
+
+.loja p {
+  font-size: 1.5rem;
+}
+
+.loja strong {
+  font-size: 1.8rem;
+  color: #fff;
+}
+.equipe-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  padding: 50px;
+}
+
+.equipe-card {
+  width: 250px;
+  background: #2a2a2a;
+  border-radius: 15px;
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #bd5a19;
+}
+
+.equipe-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+
+.equipe-card h1 {
+  color: #fff;
+  margin-top: 15px;
+  font-size: 2rem;
+}
+
+.equipe-card p {
+  color: #bd5a19;
+  font-size: 1.5rem;
+}
+.equipe-card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px rgba(189, 90, 25, 0.8);
+}
+

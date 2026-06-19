@@ -1,0 +1,358 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Cafena</title>
+  </head>
+  <body>
+    <header class="header">
+      <section>
+        <a href="#" class="logo">
+          <img src="img/logo.png" alt="logo" />
+        </a>
+        <div class="search-box">
+          <input type="text" placeholder="Pesquisar..." class="search-input" />
+          <span class="search-icon">🔍</span>
+        </div>
+        <nav class="navbar">
+          <a href="#home">Home</a>
+          <a href="#sobre">Sobre</a>
+          <a href="#menu">Menu</a>
+          <a href="#avaliacoes">Avaliação</a>
+          <a href="#endereco">Endereço</a>
+          <a href="#loja">Lojas</a>
+          <a href="#equipe">Equipes</a>
+        </nav>
+        <div class="icons">
+          <img
+            width="24"
+            height="24"
+            src="https://img.icons8.com/material-rounded/24/hearts.png"
+            alt="hearts"
+          />
+          <img
+            width="30"
+            height="30"
+            src="https://img.icons8.com/ios-glyphs/30/shopping-cart--v1.png"
+            alt="shopping-cart--v1"
+          />
+        </div>
+  <button class="cadastro" onclick="window.location.href='login.html'">
+    <img class="usuario" src="img/usuario.svg" alt="usuario" />
+    <span>Login/Cadastro</span>
+</button>
+      </section>
+    </header>
+    <div class="home-container">
+      <section id="home">
+        <div class="content">
+          <h3>O MELHOR CAFÉ É NA CAFENA</h3>
+          <p>
+            Descubra o verdadeiro prazer em cada xícara. Na Cafena, o café não é
+            apenas uma bebida, é uma experiência que aguça os sentidos e acalma
+            a alma.
+          </p>
+          <p>
+            Nossos baristas são verdadeiros artistas, dedicados a preparar a sua
+            bebida perfeita, seja um espresso intenso, um cappuccino cremoso ou
+            um método filtrado que realça as nuances de cada grão. Na Cafena, a
+            paixão pelo café se traduz em qualidade inigualável e um atendimento
+            que faz você se sentir em casa.
+          </p>
+          <a href="#menu" class="btn">Pegue o seu Agora</a>
+        </div>
+      </section>
+    </div>
+    <section class="sobre" id="#sobre">
+      <h2 class="title">Sobre <samp>Nós</samp></h2>
+      <div class="row">
+        <div class="video-container">
+          <video controls autoplay muted loop>
+            <source src="img/sobre.mp4" type="video/mp4" />
+            Seu navegador não suporta vídeos.
+          </video>
+        </div>
+        <div class="contennt">
+          <h3>O Que Faz Nosso Café Especial</h3>
+          <p>
+            A Cafena nasceu de um sonho antigo, de um pequeno grão que viajou
+            por terras distantes e se transformou em paixão. Fundada por um
+            barista visionário, que acreditava no poder de uma xícara para unir
+            pessoas e inspirar conversas, a Cafena abriu suas portas com a
+            promessa de oferecer não apenas café, mas uma experiência.
+          </p>
+          <p>
+            Desde o primeiro dia, cada detalhe foi pensado para criar um
+            refúgio: o aroma acolhedor que abraça quem entra, a seleção
+            cuidadosa dos grãos mais nobres e a arte de cada preparo. A Cafena
+            se tornou rapidamente um ponto de encontro, um lugar onde histórias
+            são compartilhadas e novas memórias são criadas, sempre acompanhadas
+            do café perfeito.
+          </p>
+          <p>
+            Hoje, a Cafena é mais do que uma cafeteria; é um legado de
+            dedicação, sabor e comunidade. Uma história escrita com carinho, um
+            gole de cada vez, e que continua a convidar a todos para fazer parte
+            dela.
+          </p>
+          <a href="http://localhost/cafena/cafena.html" class="btn">Saiba Mais</a>
+        </div>
+      </div>
+    </section>
+    <main class="comidas">
+      <h2 class="title2">MENU<samp></samp></h2>
+        <section class="comida" id="menu">
+
+            <div class="comi">
+                <img src="img/empada.png" alt="empada">
+                <h1 class="preco">Empada</h1>
+                <h1 class="preco">R$ 10,00</h1>
+                <button class="comprar">+Add</button>
+                <button class="pagar">Comprar</button>
+            </div>
+             <div class="comi">
+                <img src="img/coxinha.png" alt="coxinha">
+                <h1 class="preco">Coxinha</h1>
+                <h1 class="preco">R$ 10,00</h1>
+                <button class="comprar">+Add</button>
+                <button class="pagar">Comprar</button>
+            </div>
+            <div class="comi">
+                <img src="img/croissant.png" alt="croissant">
+                <h1 class="preco">Croissant</h1>
+                <h1 class="preco">R$ 15,00</h1>
+                <button class="comprar">+Add</button>
+                <button class="pagar">Comprar</button>
+            </div>
+            <div class="comi">
+                <img src="img/paodequeijo.png" alt="pao">
+                <h1 class="preco">Pao Quijo</h1>
+                <h1 class="preco">R$ 25,00</h1>
+                <button class="comprar">+Add</button>
+                <button class="pagar">Comprar</button>
+            </div>
+            <div class="comi">
+                <img src="img/pao-ovo.png" alt="pao-ovo">
+                <h1 class="preco">Pão Com Ovo</h1>
+                <h1 class="preco">R$ 10,00</h1>
+                <button class="comprar">+Add</button>
+                <button class="pagar">Comprar</button>
+            </div>
+              <div class="comi">
+                <img src="img/pastezinho.png" alt="pastel">
+                <h1 class="preco">Crème Brûlée</h1>
+                <h1 class="preco">R$ 20,00</h1>
+                <button class="comprar">+Add</button>
+                <button class="pagar">Comprar</button>
+            </div>
+             <div class="comi">
+                <img src="img/bolo-chocolate.png" alt="pastel">
+                <h1 class="preco">Bolo Chocolate</h1>
+                <h1 class="preco">R$ 15,00</h1>
+                <button class="comprar">+Add</button>
+                <button class="pagar">Comprar</button>
+            </div>
+            <div class="comi">
+                <img src="img/mocha.png" alt="mocha">
+                <h1 class="preco">Mocha</h1>
+                <h1 class="preco">R$ 15,00</h1>
+                <button class="comprar">+Add</button>
+                <button class="pagar">Comprar</button>
+            </div>
+              <div class="comi">
+                <img src="img/çay.png" alt="çay">
+                <h1 class="preco">Çay</h1>
+                <h1 class="preco">R$ 20,00</h1>
+                <button class="comprar">+Add</button>
+                <button class="pagar">Comprar</button>
+            </div>
+                <div class="comi">
+                <img src="img/FlatWhite.png" alt="Flat">
+                <h1 class="preco">Flat White</h1>
+                <h1 class="preco">R$ 20,00</h1>
+                <button class="comprar">+Add</button>
+                <button class="pagar">Comprar</button>
+            </div>
+            <div class="comi">
+                <img src="img/Macchiato.png" alt="Machiato">
+                <h1 class="preco">Macchiato</h1>
+                <h1 class="preco">R$ 20,00</h1>
+                <button class="comprar">+Add</button>
+                <button class="pagar">Comprar</button>
+            </div>
+            <div class="comi">
+                <img src="img/irish_coffee.png" alt="coff">
+                <h1 class="preco">iris-Coffee</h1>
+                <h1 class="preco">R$ 20,00</h1>
+                <button class="comprar">+Add</button>
+                <button class="pagar">Comprar</button>
+            </div>
+             <div class="comi">
+                <img src="img/affogato.png" alt="afogato">
+                <h1 class="preco">Afogato</h1>
+                <h1 class="preco">R$ 15,00</h1>
+                <button class="comprar">+Add</button>
+                <button class="pagar">Comprar</button>
+            </div>
+            <div class="comi">
+                <img src="img/cafegelato.png" alt="gelato">
+                <h1 class="preco">Cafe Gelato</h1>
+                <h1 class="preco">R$ 15,00</h1>
+                <button class="comprar">+Add</button>
+                <button class="pagar">Comprar</button>
+            </div>
+            <div class="comi">
+                <img src="img/cafe-preto.png" alt="cafe">
+                <h1 class="preco">Café Preto</h1>
+                <h1 class="preco">R$ 10,00</h1>
+                <button class="comprar">+Add</button>
+                <button class="pagar">Comprar</button>
+            </div>
+            <div class="comi">
+                <img src="img/cappuccino.png" alt="capotino">
+                <h1 class="preco">CapPucino</h1>
+                <h1 class="preco">R$ 19,00</h1>
+                <button class="comprar">+Add</button>
+                <button class="pagar">Comprar</button>
+            </div>
+           
+               <div class="comi">
+                <img src="img/expresso.png" alt="expreso">
+                <h1 class="preco">Expresso</h1>
+                <h1 class="preco">R$ 19,00</h1>
+                <button class="comprar">+Add</button>
+                <button class="pagar">Comprar</button>
+            </div>
+    </section>
+    <main class="avaliacao">
+      <h2 class="title3">Avaliacao</h2>
+        <section class="avalia" id="avaliacao">
+          <div class="avalia1">
+                <img src="img/avaliacao1.png" alt="avalia1">
+                <h1 class="preco">Lucas.Santos</h1>
+                <p>A melhor Cafeteria da regiao</p>
+                <p>muito bom o atendimento</p>
+                <p>CapPucino sem palavras muito bom.</p>
+                <span class="estrela-pronta">&#9733;</span>
+                <span class="estrela-pronta">&#9733;</span>
+                <span class="estrela-pronta">&#9733;</span>
+                <span class="estrela-pronta">&#9733;</span>
+                <span class="estrela-pronta">&#9733;</span>
+            </div>
+              <div class="avalia1">
+                <img src="img/avaliacao2.png" alt="avalia1">
+                <h1 class="preco">Beatriz.Pier</h1>
+                <p>Cafeteria Muito bom </p>
+                <p>um lugar muito bom pra reunir a familia e amigos </p>
+                <p>recomendo muito </p>
+                <span class="estrela-pronta">&#9733;</span>
+                <span class="estrela-pronta">&#9733;</span>
+                <span class="estrela-pronta">&#9733;</span>
+                <span class="estrela-pronta">&#9733;</span>
+                <span class="estrela-pronta">&#9733;</span>
+            </div>
+       
+              <div class="avalia1">
+                <img src="img/avaliacao4.png" alt="avalia1">
+                <h1 class="preco">Gisele.Bery</h1>
+                <p>Minha Cafeteria Favorita </p>
+                <p>Me apaixonei pelo Lugar</p>
+                <p>Se pudesse ia todos os dias </p>
+                <span class="estrela-pronta">&#9733;</span>
+                <span class="estrela-pronta">&#9733;</span>
+                <span class="estrela-pronta">&#9733;</span>
+                <span class="estrela-pronta">&#9733;</span>
+                <span class="estrela-pronta">&#9733;</span>
+            </div>
+             <div class="avalia1">
+                <img src="img/AVALICAO5.png" alt="avalia1">
+                <h1 class="preco">Ronaldo.F</h1>
+                <p>Lugar bom demais </p>
+                <p>recomendei para amigos e familha</p>
+                <p>ta de parabens o estabelecimento</p>
+                <span class="estrela-pronta">&#9733;</span>
+                <span class="estrela-pronta">&#9733;</span>
+                <span class="estrela-pronta">&#9733;</span>
+                <span class="estrela-pronta">&#9733;</span>
+                <span class="estrela-pronta">&#9733;</span>
+             </div>
+        </section>
+        <section class="lojas" id="lojas">
+          <h2 class="title3">Lojas</h2>
+    <div class="lojas-container">
+
+        <div class="loja">
+            <h3>📍 Centro</h3>
+            <p>Rua Bigaiu Nº 123</p>
+            <p>Pindamonhangaba - SP</p>
+            <p>08h às 22h</p>
+            <strong>(12) 99999-9999</strong>
+        </div>
+
+        <div class="loja">
+            <h3>📍 Shopping</h3>
+            <p>Av. Central Nº 456</p>
+            <p>Pindamonhangaba - SP</p>
+            <p>10h às 22h</p>
+            <strong>(12) 98888-8888</strong>
+        </div>
+
+        <div class="loja">
+            <h3>📍 Zona Sul</h3>
+            <p>Rua das Flores Nº 789</p>
+            <p>Pindamonhangaba - SP</p>
+            <p>08h às 20h</p>
+            <strong>(12) 97777-7777</strong>
+        </div>
+
+    </div>
+</section>
+<section class="equipes" id="equipes">
+    <h2 class="title3">Equipe</h2>
+
+    <div class="equipe-container">
+
+        <div class="equipe-card">
+            <img src="img/time1.jpg" alt="">
+            <h1>Felipe</h1>
+            <p>Barista</p>
+        </div>
+
+        <div class="equipe-card">
+            <img src="img/time2.jpg" alt="">
+            <h1>Hagata</h1>
+            <p>Barista</p>
+        </div>
+
+        <div class="equipe-card">
+            <img src="img/time3.jpg" alt="">
+            <h1>Boris</h1>
+            <p>Barista</p>
+        </div>
+
+        <div class="equipe-card">
+            <img src="img/ceo.jpg" alt="">
+            <h1>Celio e Julian</h1>
+            <p>CEO</p>
+        </div>
+
+    </div>
+</section>
+
+
+        
+
+
+          
+
+        
+  </body>
+</html>
